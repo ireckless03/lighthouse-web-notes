@@ -6,11 +6,9 @@ const connect = function(client) {
   });
 
   conn.on("connect", () => {
-    console.log("Hi");
-    conn.write('Name: DD');
+    conn.write("Name: DoD");
   });
-
-  // interpret incoming data as text
+  
   conn.setEncoding("utf8");
 
   return conn;
