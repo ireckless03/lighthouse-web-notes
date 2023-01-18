@@ -7,6 +7,7 @@ const connect = function(client) {
 
   conn.on("connect", () => {
     console.log("Hi");
+    conn.write('Name: DD');
   });
 
   // interpret incoming data as text
